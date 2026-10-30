@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOT BEAT STUDIO</title>
+    
+    <style>
+
+body{background-color: chartreuse;}
+
+button{background-color: yellowgreen;}
+
+.you{color: blue;}
+
+.Me{color: blue;}
+
+h1{color:blueviolet;}
+
+.card{ display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+border: 2px solid white;
+background-color: burlywood;
+margin: auto;
+margin-top: 100px;
+width: 300px;
+height: 300px;
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="card" id="layout">
+        <h1>Sign In</h1>
+        <form>
+            <label class="you" for="username">Username</label>
+            <input id="username" type="text" placeholder="Username"><br><br>
+
+            <label class="Me" for="password">Password</label>
+            <input id="password" type="password" placeholder="Password"><br><br>
+        </form>
+
+        <button type="button" onclick="login()">Login</button>
+
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
